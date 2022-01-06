@@ -155,7 +155,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center; 
-  background-color: #666666; 
+  background-color: #2B2E4A; 
   border-radius: 4px;
   border: unset;
 }
@@ -203,7 +203,7 @@ a {
 #chia-hm_exp[aria-expanded="true"] {
   height: auto;
   width: 100%;
-  background-color: #666666;
+  background-color: rgba(22, 22, 22, 0.97);
   position: absolute;
   list-style-type: none;
   margin: unset;   
@@ -226,7 +226,7 @@ a {
 }
 
 #chia-hm_exp[aria-expanded="true"] a:hover {
-  color: #20B2AA;
+  color: #FF9000;
 }
 
 @media screen and (min-width: 992px) {
@@ -236,7 +236,7 @@ a {
       margin: unset;
   }
   #chia-navbar a:hover {
-      color: #20B2AA;
+      color: #FF9000;
   }
   #chia-navbar a {
       color: white;
