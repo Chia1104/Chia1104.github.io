@@ -87,6 +87,8 @@
 				scrollTop: $('html').offset().top
 			}, 500, 'easeInOutExpo');
 
+			// $("#chia-hm_exp").attr("aria-expanded", "false");
+			// $("#chia-hm").attr("aria-expanded", "false");
 			return false;
 		});
 
@@ -142,12 +144,12 @@
 			if (hm_click === clicked) {
 				$("#chia-hm_exp").attr("aria-expanded", "true");
 				$(this).attr("aria-expanded", "true");
-				hm_click = true;
+				clicked = true;
 				return;
 			}
 			$("#chia-hm_exp").attr("aria-expanded", "false");
 			$(this).attr("aria-expanded", "false");
-			hm_click = false;
+			clicked = false;
 		});
 	}
 
@@ -160,7 +162,7 @@
 		parallax();
 		// pieChart();
 		skillsWayPoint();
-		narbarClick();
+		// narbarClick();
 	});
 
 

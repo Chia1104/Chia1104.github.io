@@ -209,7 +209,7 @@ a {
   margin: unset;   
   padding: 20px 0;
   transition: 0.7s ease-in-out;
-  z-index: 999;
+  z-index: 888;
 }
 
 #chia-hm_exp[aria-expanded="false"] a {

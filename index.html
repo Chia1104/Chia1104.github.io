@@ -56,7 +56,7 @@
                     <a href="#">
                         <h1 class="chia-title">CHIA's WEB</h1>
                     </a>
-                    <button id="chia-hm" type="button" class="chia-hm chia-hm_toggler" aria-expanded="false">
+                    <button id="chia-hm" type="button" class="chia-hm chia-hm_toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="chia-hm_icon_bar"></span>
                         <span class="chia-hm_icon_bar"></span>
                     </button>
@@ -77,23 +77,53 @@
                 </div>
             </div>
         </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul id="chia-hm_exp" aria-expanded="false">
+                <div class="container">
+                    <li>
+                        <a href="#">About Me</a>
+                    </li>
+                    <li>
+                        <a href="#">Hobby</a>
+                    </li>
+                    <li>
+                        <a href="#">Skill</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">Result</a>
+                    </li>
+                </div>
+            </ul>
+        </div>    
     </div>
-    <ul id="chia-hm_exp" aria-expanded="false">
-        <div class="container">
-            <li>
-                <a href="#">About Me</a>
-            </li>
-            <li>
-                <a href="#">Hobby</a>
-            </li>
-            <li>
-                <a href="#">Skill</a>
-            </li>
-            <li>
-                <a href="#" target="_blank">Result</a>
-            </li>
+
+    <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+        aria-controls="offcanvasExample">
+        Button with data-bs-target
+    </button>
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-    </ul>
+        <div class="offcanvas-body">
+            <div>
+                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images,
+                lists, etc.
+            </div>
+            <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-bs-toggle="dropdown">
+                    Dropdown button
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </div>
+    </div> -->
 
     <div id="page">
         <header id="chia-header" class="chia-cover js-fullheight" role="banner"
@@ -109,10 +139,14 @@
                                 <h3><span>WEB / UI / UX</span></h3>
                                 <p>
                                 <ul class="chia-social-icons">
-                                    <li><a href="https://www.instagram.com/chia_1104/" aria-label="Instagram"><i class="icon-instagram2"></i></a></li>
-                                    <li><a href="https://www.facebook.com/profile.php?id=100010013018832" aria-label="Facebook"><i class="icon-facebook2"></i></a></li>
-                                    <li><a href="https://github.com/Chia1104" aria-label="GitHub"><i class="icon-github2" ></i></a></li>
-                                    <li><a href="https://chia1104.github.io/" aria-label="CHIAs WEB"><i class="icon-dribbble2"></i></a></li>
+                                    <li><a href="https://www.instagram.com/chia_1104/" aria-label="Instagram"><i
+                                                class="icon-instagram2"></i></a></li>
+                                    <li><a href="https://www.facebook.com/profile.php?id=100010013018832"
+                                            aria-label="Facebook"><i class="icon-facebook2"></i></a></li>
+                                    <li><a href="https://github.com/Chia1104" aria-label="GitHub"><i
+                                                class="icon-github2"></i></a></li>
+                                    <li><a href="https://chia1104.github.io/" aria-label="CHIAs WEB"><i
+                                                class="icon-dribbble2"></i></a></li>
                                 </ul>
                                 </p>
                             </div>
@@ -132,13 +166,14 @@
                 <div class="row">
                     <div class="col-lg-4">
                         <ul class="info">
-                            <li><span class="first-block">Full Name:</span><span class="second-block">Yu Chia, Yu</span></li>
+                            <li><span class="first-block">Full Name:</span><span class="second-block">Yu Chia, Yu</span>
+                            </li>
                             <li><span class="first-block">Phone:</span><span class="second-block">0970227360</span>
                             </li>
                             <li><span class="first-block">Email:</span><span
                                     class="second-block">yuyuchia7423@gmail.com</span></li>
-                            <li><span class="first-block">Website:</span><a class="second-block" href="https://chia1104.github.io"><span
-                                >chia1104.github.io/</span></a></li>
+                            <li><span class="first-block">Website:</span><a class="second-block"
+                                    href="https://chia1104.github.io"><span>chia1104.github.io/</span></a></li>
                         </ul>
                     </div>
                     <div class="col-lg-8">
@@ -153,10 +188,14 @@
                             voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci.</p>
                         <p>
                         <ul class="chia-social-icons">
-                            <li><a href="https://www.instagram.com/chia_1104/" aria-label="Instagram"><i class="icon-instagram2"></i></a></li>
-                            <li><a href="https://www.facebook.com/profile.php?id=100010013018832" aria-label="Facebook"><i class="icon-facebook3"></i></a></li>
-                            <li><a href="https://github.com/Chia1104" aria-label="GitHub"><i class="icon-github2"></i></a></li>
-                            <li><a href="https://chia1104.github.io/" aria-label="CHIAs WEB"><i class="icon-dribbble2"></i></a></li>
+                            <li><a href="https://www.instagram.com/chia_1104/" aria-label="Instagram"><i
+                                        class="icon-instagram2"></i></a></li>
+                            <li><a href="https://www.facebook.com/profile.php?id=100010013018832"
+                                    aria-label="Facebook"><i class="icon-facebook3"></i></a></li>
+                            <li><a href="https://github.com/Chia1104" aria-label="GitHub"><i
+                                        class="icon-github2"></i></a></li>
+                            <li><a href="https://chia1104.github.io/" aria-label="CHIAs WEB"><i
+                                        class="icon-dribbble2"></i></a></li>
                         </ul>
                         </p>
                     </div>
