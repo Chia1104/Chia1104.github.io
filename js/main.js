@@ -1,6 +1,8 @@
 ; (function () {
 
 	'use strict';
+	let hm_click = false;
+	let clicked = false;
 
 	var isMobile = {
 		Android: function () {
@@ -89,6 +91,7 @@
 
 			$("#chia-hm_exp").attr("aria-expanded", "false");
 			$("#chia-hm").attr("aria-expanded", "false");
+			clicked = false;
 			return false;
 		});
 
@@ -137,8 +140,8 @@
 	};
 
 	var narbarClick = function () {
-		let hm_click = false;
-		let clicked = false;
+		// let hm_click = false;
+		// let clicked = false;
 
 		$("#chia-hm").click(function () {
 			if (hm_click === clicked) {
@@ -150,6 +153,24 @@
 			$("#chia-hm_exp").attr("aria-expanded", "false");
 			$(this).attr("aria-expanded", "false");
 			clicked = false;
+		});
+
+		$("#chia-hm_exp").click(function () {
+			if (clicked === true) {
+				$("#chia-hm_exp").attr("aria-expanded", "false");
+				$("#chia-hm").attr("aria-expanded", "false");
+				clicked = false;
+				return;
+			}
+		});
+
+		$("#page").click(function () {
+			if (clicked === true) {
+				$("#chia-hm_exp").attr("aria-expanded", "false");
+				$("#chia-hm").attr("aria-expanded", "false");
+				clicked = false;
+				return;
+			}
 		});
 	}
 
