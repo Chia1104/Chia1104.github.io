@@ -80,17 +80,17 @@ a {
   
   ::-webkit-selection {
     color: #fff;
-    background: #2B2E4A;
+    background: #FF9000;
   }
   
   ::-moz-selection {
     color: #fff;
-    background: #2B2E4A;
+    background: #FF9000;
   }
   
   ::selection {
     color: #fff;
-    background: #2B2E4A;
+    background: #FF9000;
   }
 
   .c-head {
