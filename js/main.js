@@ -1,10 +1,9 @@
-; (function () {
+(function () {
 
-	'use strict';
 	let hm_click = false;
 	let clicked = false;
 
-	var isMobile = {
+	const isMobile = {
 		Android: function () {
 			return navigator.userAgent.match(/Android/i);
 		},
@@ -26,7 +25,7 @@
 	};
 
 
-	var fullHeight = function () {
+	const fullHeight = () => {
 
 		if (!isMobile.any()) {
 			$('.js-fullheight').css('height', $(window).height());
@@ -37,12 +36,12 @@
 	};
 
 	// Parallax
-	var parallax = function () {
+	const parallax = () => {
 		$(window).stellar();
 	};
 
-	var contentWayPoint = function () {
-		var i = 0;
+	const contentWayPoint = () => {
+		let i = 0;
 		$('.animate-box').waypoint(function (direction) {
 
 			if (direction === 'down' && !$(this.element).hasClass('animated-fast')) {
@@ -53,9 +52,9 @@
 				setTimeout(function () {
 
 					$('body .animate-box.item-animate').each(function (k) {
-						var el = $(this);
+						let el = $(this);
 						setTimeout(function () {
-							var effect = el.data('animate-effect');
+							let effect = el.data('animate-effect');
 							if (effect === 'fadeIn') {
 								el.addClass('fadeIn animated-fast');
 							} else if (effect === 'fadeInLeft') {
@@ -79,7 +78,7 @@
 
 
 
-	var goToTop = function () {
+	const goToTop = () => {
 
 		$('.js-gotop').on('click', function (event) {
 
@@ -108,7 +107,7 @@
 
 	};
 
-	var pieChart = function () {
+	const pieChart = () => {
 		$('.chart').easyPieChart({
 			scaleColor: false,
 			lineWidth: 4,
@@ -120,7 +119,7 @@
 		});
 	};
 
-	var skillsWayPoint = function () {
+	const skillsWayPoint = () => {
 		if ($('#chia-skills').length > 0) {
 			$('#chia-skills').waypoint(function (direction) {
 
@@ -135,13 +134,11 @@
 
 
 	// Loading page
-	var loaderPage = function () {
+	const loaderPage = () => {
 		$(".chia-loader").fadeOut("slow");
 	};
 
-	var narbarClick = function () {
-		// let hm_click = false;
-		// let clicked = false;
+	const narbarClick = () => {
 
 		$("#chia-hm").click(function () {
 			if (hm_click === clicked) {
@@ -181,7 +178,6 @@
 		loaderPage();
 		fullHeight();
 		parallax();
-		// pieChart();
 		skillsWayPoint();
 		narbarClick();
 	});

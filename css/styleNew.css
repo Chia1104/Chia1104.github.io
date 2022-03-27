@@ -1099,64 +1099,17 @@ a {
     width: 100%;
     float: left;
   }
-  #chia-consult .video, #chia-consult .choose {
-    display: inline-block;
-  }
-  @media screen and (max-width: 768px) {
-    #chia-consult .video, #chia-consult .choose {
-      width: 100% !important;
-    }
-  }
-  #chia-consult .video {
-    display: table;
-    width: 50%;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    position: relative;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    -moz-flex-wrap: wrap;
-  }
-  @media screen and (max-width: 768px) {
-    #chia-consult .video {
-      display: none;
-    }
-  }
   #chia-consult .choose {
-    width: 50%;
+    width: 100%;
     padding: 4em;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 768px) {
     #chia-consult .choose {
-      width: 100%;
+      justify-self: center;
+      margin: auto; 
+      width: 50%;
       padding: 4em 1em;
     }
-  }
-  
-  .chia-video {
-    overflow: hidden;
-  }
-  /* @media screen and (max-width: 992px) {
-    .chia-video {
-      height: 450px;
-    }
-  } */
-  .chia-video .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.1);
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
   }
   
   #chia-footer {
